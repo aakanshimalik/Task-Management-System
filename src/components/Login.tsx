@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import axios from "axios";
+import api from "../api";
 
 interface LoginProps {
     onLogin: () => void;
@@ -21,13 +22,10 @@ export const Login = ({ onLogin, onSignup }: LoginProps) => {
         setLoading(true);
 
         try {
-            const response = await axios.post(
-                "http://localhost:5000/api/auth/login",
-                {
-                    email,
-                    password,
-                }
-            );
+            const response = await api.post("/auth/login", {
+                email,
+                password,
+            });
 
             localStorage.setItem(
                 "accessToken",

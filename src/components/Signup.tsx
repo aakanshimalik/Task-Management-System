@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import axios from "axios";
+import api from "../api";
 
 interface SignupProps {
     onSignupSuccess: () => void;
@@ -32,14 +33,11 @@ export const Signup = ({
         setLoading(true);
 
         try {
-            await axios.post(
-                "http://localhost:5000/api/auth/register",
-                {
-                    name,
-                    email,
-                    password,
-                }
-            );
+            await api.post("/auth/register", {
+                name,
+                email,
+                password,
+            });
 
             alert("Account created successfully. Please login.");
 

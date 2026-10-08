@@ -76,15 +76,17 @@ export const TodoForm = ({ addTodo, setFilter }: TodoFormProps) => {
                 Add Task
             </button>
 
-            <select
-                onChange={(event) => setFilter(event.target.value)}
-                className="filterbtn"
-                defaultValue="all"
-            >
-                <option value="all">All</option>
-                <option value="completed">Completed</option>
-                <option value="pending">Pending</option>
-            </select>
+            <div className="task-filter">
+                <select
+                    onChange={(event) => setFilter(event.target.value)}
+                    className="filterbtn"
+                    defaultValue="all"
+                >
+                    <option value="all">All</option>
+                    <option value="completed">Completed</option>
+                    <option value="pending">Pending</option>
+                </select>
+            </div>
 
         </form>
     );

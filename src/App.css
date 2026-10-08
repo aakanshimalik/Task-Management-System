@@ -535,20 +535,28 @@ h1 {
    FILTER
    ========================= */
 
+.dashboard .task-filter {
+  border-top: 1px solid #e5e7eb;
+  margin-top: 15px;
+  padding-top: 15px;
+  margin-bottom: 20px;
+  text-align: left;
+}
+
 .dashboard .filterbtn {
-  background: #CADCFC;
-
-  color: #00246B;
-
-  border: none;
-
-  padding: 9px 15px;
-
+  background: #f5f7fa;
+  color: #4b5563;
+  border: 1px solid #d9dee7;
+  padding: 8px 14px;
   border-radius: 6px;
-
   cursor: pointer;
+  font-size: 14px;
+  transition: all 0.2s ease;
+}
 
-  margin-left: 5px;
+.dashboard .filterbtn:hover {
+  background: #eef1f5;
+  border-color: #c7cdd6;
 }
 
 

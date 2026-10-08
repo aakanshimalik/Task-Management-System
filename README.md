@@ -4,6 +4,10 @@ A full-stack Task Management System built using **React, TypeScript, Node.js, Ex
 
 The application allows authenticated users to create, view, update, delete, and manage their tasks with status and due-date tracking.
 
+## Deployment
+  - Frontend (vercel):- https://task-management-system-git-main-aakanshi-maliks-projects.vercel.app/
+  - Backend (render):- https://task-management-system-7xyv.onrender.com/
+
 ## 🚀 Features
 
 ### 👤 Authentication

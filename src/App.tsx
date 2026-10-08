@@ -1,8 +1,8 @@
 import { useState } from "react";
 import "./App.css";
-import { TodoWrapper } from "./components/TodoWrapper.tsx";
-import { Login } from "./components/Login.tsx";
-import { Signup } from "./components/Signup.tsx";
+import { TodoWrapper } from "./components/TodoWrapper";
+import { Login } from "./components/Login";
+import { Signup } from "./components/Signup";
 
 function App() {
     const [isLoggedIn, setIsLoggedIn] = useState<boolean>(
